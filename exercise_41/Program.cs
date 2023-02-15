@@ -15,7 +15,9 @@ for (int i = 0, sum = 0; i <= Array.Length; i++)
         Console.WriteLine($"The number of the values greater than zero is {sum}"); 
         break;
     }
+    
     Console.Write($"Enter a value of {i} element: "); 
+    
     Array[i] = Convert.ToInt32(Console.ReadLine());
     if (Array[i]>0) sum += 1;
 }
